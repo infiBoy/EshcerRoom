@@ -142,6 +142,11 @@
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Desktop\New folder (5)\additional libraries\GL Files\include\GL\GL.H" />
+    <ClInclude Include="..\..\..\..\..\Desktop\New folder (5)\additional libraries\GL Files\include\GL\GLAux.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\New folder (5)\additional libraries\GL Files\include\GL\GLU.H" />
+    <ClInclude Include="..\..\..\..\..\Desktop\New folder (5)\additional libraries\GL Files\include\GL\glui.h" />
+    <ClInclude Include="..\..\..\..\..\Desktop\New folder (5)\additional libraries\GL Files\include\GL\glut.h" />
     <ClInclude Include="SOIL.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="DataModel.h" />
