@@ -1,0 +1,37 @@
+
+The program is relies on Glut library that must be inside the system directories, so if you want to import the project into your computer,
+Follow those steps:
+
+First download this 118 KB GLUT package from here 
+Extract the downloaded ZIP file and make sure you find the following
+glut.h
+glut32.lib
+glut32.dll
+If you have a 32 bits operating system, place glut32.dll to C:\Windows\System32\,
+ if your operating system is 64 bits:
+ place it to 'C:\Windows\SysWOW64\' (to your system directory)
+
+Place glut.h C:\Program Files\Microsoft Visual Studio 12\VC\include\GL\ (NOTE: 12 here refers to your VS version it may be 8 or 10)
+If you do not find VC and following directories.. go on create it.
+Place glut32.lib to C:\Program Files (x86)\Microsoft Visual Studio 12\VC\lib\
+Then place header files in:  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\GL
+Now, open visual Studio and
+1.	Under Visual C++, select Empty Project(or your already existing project)
+2.	Go to Project -> Properties. Select 'All Configuration' from Configuration dropdown menu on top left corner
+3.	Select Linker -> Input
+4.	Now right click on "Additional Dependence" found on Right panel and click Edit
+now type
+opengl32.lib
+glu32.lib
+glut32.lib
+glaux.lib
+(NOTE: Each .lib in new line)
+
+
+and you need to include also the Soil Lib (Soil.lib into the project)
+
+
+התקנת SOIL:
+מאחר שהשתמשתי בספריית SOIL  שתפקידה לטעון את הטקסטורות ולהציגן על אובייקטים תלת מימדיים,נדרש להוסיפה לחלק מהפרוייקט.
+הHEADER של הספרייה הוכנס להיות חלק מהפרוייקט, אך עדיין נדרש לקשר(Link) את הספרייה דרך סביבת העבודה של VISUAL STUDIO ע"י הדרך הבאה:
+In Visual Studio 2010 this works as follows: Right-click on the project name in the left hand tree-view and choose Properties. There under "Configuration Properties -> Linker -> Input -> Additional Dependencies" we  add SOIL.lib by editing the field.
